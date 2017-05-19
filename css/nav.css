@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* Navigatie*/
+nav ul{
+    list-style: none;
+    padding: 0;
+    width: 485px;
+    margin: 0 auto;
+
+}
+
+nav ul a{
+    text-decoration:none;
+    font-family: Oswald, sans-serif;
+}
+
+.navigation_wrapper {
+    background-color: #999;
+}
+.navigation_row {
+    position: relative;
+    overflow: visible;
+}
+.navigation_row .logo {
+    position:absolute;
+    width:150px;
+    height: 150px;
+    z-index: 999;
+    top: 20px;
+    background-image:url('../img/foto1.png') no-repeat;
+    left: 50px;
+}
+
+
+#main-navigation {
+    
+}
+
+#main-navigation > ul > li{
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-navigation > ul > li > a{         /*pijltjes zodat het alleen de hoofdnavigatie beinvloedt*/
+    display: block;
+    border-right: none;
+    text-align: center;
+    color: black;
+}
+
+#main-navigation ul li:last-of-type a {
+    border: none;
+}
+
+#main-navigation ul li a:hover{
+    color: white;
+}
+/* Einde Navigatie*/

@@ -1,28 +1,260 @@
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background: rgba(26,35,126 ,1) url('../assets/images/home.jpg') no-repeat center center fixed;
-  background-size: cover;
-
-  color: rgba(232,234,246 ,1);
+	font-size: 16px;
+	background-repeat: no-repeat;
 }
 
-.intro {
-  width: 90vw;
+.grid__column-12,
+.grid__column-11,
+.grid__column-10,
+.grid__column-9,
+.grid__column-8,
+.grid__column-7,
+.grid__column-6,
+.grid__column-5,
+.grid__column-4,
+.grid__column-3,
+.grid__column-2,
+.grid__column-1 {
+}
 
-  padding: 1rem;
-  margin-top: 1rem;
 
-  background: rgba(41,182,246 ,1);
-  color: rgba(1,87,155 ,1);
+.welkom_tekst{
+	text-align: center;
+}
+
+h1{
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-size: 18px;
+    margin-top:50px;
+    margin-left: 40px;
+}
+
+h2{
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-size: 16px;
+    margin-left: 40px;
+}
+p{
+	font-family: Oswald;
+	font-size: 13px;
+	line-height: 170%;
+    margin-left: 40px;
+}
+
+.contact{
+    margin-top: 150px;
+}
+.button {
+    display: inline-block;
+    font-size: 18px;
+	text-transform: uppercase;
+    cursor: pointer;
+	background-color:transparent; 
+    color: black; 
+    border: 2px solid black;
+	text-align: center;
+	font-family: Oswald;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button:hover {
+    background-color: black; 
+    color: white;
+}
+
+}
+.img{
+	width: 200px;
+    text-align: center;
+}
+
+
+.img_text{
+    text-align: center;
+}
+
+.img_team{
+    width: 170px;
+    margin-left: 40px;
+}
+
+iframe{
+    margin-left: 40px;
+    width: 550px;
+}
+
+.cta_portfolio{
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-family: Oswald, sans-serif;
+    background-color: #d9d9d9;
+}
+ 
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-family: Oswald, sans-serif;
+    background-color: #d9d9d9;
+    color: 
+}
+
+.content_row article {
+	margin: 10px 0px 60px 0px;
+}
+.content_row article img.img {
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.wrapper {
+  background: #DDD url('../img/foto1.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height:  600px;
+  position: relative;
+}
+
+.wrapper_btc {
+  background: #DDD url('../img/btc_celine.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height:  300px;
+  position: relative;
+}
+
+.dark_wrapper{
+    background-color:#000;
+}
+.firstwrapper{
+    margin-top:100px;
+}
+.wrapper__text { 
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  position:  absolute;
+  color: #FFF;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform:  translate(-50%,-50%);
+  text-decoration: none;
+  text-align: center;
+}
+
+.wrapper__title { 
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.wrapper__titlebtc{
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 60px;
+  color: black;
+}
+a{
+	text-decoration: none;
+}
+
+#section04 a {
+	padding-top: 60px;
+}
+#section04 a span {
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	margin-left: -12px;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb04 2s infinite;
+	animation: sdb04 2s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+	0% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+	}
+	20% {
+		-webkit-transform: rotate(-45deg) translate(-10px, 10px);
+	}
+	40% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+	}
+}
+@keyframes sdb04 {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+	}
+	20% {
+		transform: rotate(-45deg) translate(-10px, 10px);
+	}
+	40% {
+		transform: rotate(-45deg) translate(0, 0);
+	}
+}
+
+.diensten{
+	text-align: center;
+    color: white;
+}
+
+.footer__wrapper{
+  background-color: black;
+}
+.footer{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.footer p{
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+i{
+    padding: 0px 50px 60px 0px;
+    color: black;
+    
+}
+
+i:hover{
+    color: #999;
+}
+.icons{
+    margin-left: 450px;
+    margin-top: 30px;
 }
