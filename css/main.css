@@ -7,21 +7,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-.grid__column-12,
-.grid__column-11,
-.grid__column-10,
-.grid__column-9,
-.grid__column-8,
-.grid__column-7,
-.grid__column-6,
-.grid__column-5,
-.grid__column-4,
-.grid__column-3,
-.grid__column-2,
-.grid__column-1 {
-}
-
-
+/*tekst*/
 .welkom_tekst{
 	text-align: center;
 }
@@ -31,25 +17,25 @@ h1{
 	text-transform: uppercase;
 	font-size: 18px;
     margin-top:50px;
-    margin-left: 40px;
 }
 
 h2{
 	font-family: Oswald;
 	text-transform: uppercase;
 	font-size: 16px;
-    margin-left: 40px;
 }
 p{
 	font-family: Oswald;
 	font-size: 13px;
 	line-height: 170%;
-    margin-left: 40px;
 }
 
 .contact{
     margin-top: 150px;
 }
+
+
+/*buttons*/
 .button {
     display: inline-block;
     font-size: 18px;
@@ -65,30 +51,26 @@ p{
     margin-bottom: 30px;
 }
 
+.button_wit{
+    display: inline-block;
+    font-size: 18px;
+	text-transform: uppercase;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+	text-align: center;
+	font-family: Oswald;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+
 .button:hover {
     background-color: black; 
     color: white;
-}
-
-}
-.img{
-	width: 200px;
-    text-align: center;
-}
-
-
-.img_text{
-    text-align: center;
-}
-
-.img_team{
-    width: 170px;
-    margin-left: 40px;
-}
-
-iframe{
-    margin-left: 40px;
-    width: 550px;
 }
 
 .cta_portfolio{
@@ -97,6 +79,57 @@ iframe{
     margin: 0px auto;
 }
 
+.buttonz{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+	text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid black;
+	text-align: center;
+	font-family: Oswald;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.buttonz:hover{
+    background-color: white;
+    color: black;
+}
+/*a*/
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #999;
+}
+
+
+/*images*/
+.img{
+	width: 200px;
+    text-align: center;
+}
+
+.img_text{
+    text-align: center;
+}
+
+.img_team{
+    width: 170px;   
+}
+
+/*kaart*/
+iframe{
+    width: 550px;
+}
+
+/*formulier*/
 textarea, select {
     width: 100%;
     padding: 12px 20px;
@@ -119,7 +152,7 @@ input{
     box-sizing: border-box;
     font-family: Oswald, sans-serif;
     background-color: #d9d9d9;
-    color: 
+    /*color: */
 }
 
 .content_row article {
@@ -130,8 +163,13 @@ input{
     padding: 10px 40px;
 }
 
+.content_row.portfolio article img.img {
+    width: 100%;
+    padding: 10px 70px 10px 0px;
+}
+
 .wrapper {
-  background: #DDD url('../img/foto1.png') no-repeat;
+  background: #DDD url('../assets/img/foto1.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -140,20 +178,33 @@ input{
 }
 
 .wrapper_btc {
-  background: #DDD url('../img/btc_celine.jpg') no-repeat;
+  background: #DDD url('../assets/img/btc_celine.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%;
   height:  300px;
   position: relative;
+  filter: grayscale(100%);
+}
+
+.wrapper_rufus{
+    background: #DDD url('../assets/img/rufusshort.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height:  300px;
+  position: relative;
+  filter: grayscale(100%);
 }
 
 .dark_wrapper{
     background-color:#000;
 }
+
 .firstwrapper{
     margin-top:100px;
 }
+
 .wrapper__text { 
   font-family: Lato, sans-serif;
   font-weight: 400;
@@ -182,13 +233,11 @@ input{
   padding-top: 60px;
   color: black;
 }
-a{
-	text-decoration: none;
-}
-
+/*pijltje*/
 #section04 a {
 	padding-top: 60px;
 }
+
 #section04 a span {
 	position: absolute;
 	top: 500px;
@@ -227,24 +276,32 @@ a{
 	}
 }
 
+
 .diensten{
 	text-align: center;
     color: white;
+    padding: 25px;
 }
 
+.foto{
+    padding-top: 40px;
+}
 .footer__wrapper{
   background-color: black;
 }
+
+/*footer*/
 .footer{
-    color: white;
-    text-align: center;
-    padding: 5px;
-}
-.footer p{
-    font-size: 15px;
-    margin-top: 0px;
+    background-color: black;
 }
 
+.footer_zwart{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*icons*/
 i{
     padding: 0px 50px 60px 0px;
     color: black;
@@ -254,7 +311,41 @@ i{
 i:hover{
     color: #999;
 }
+
 .icons{
     margin-left: 450px;
     margin-top: 30px;
+}
+
+.copyright{
+    margin-top: 85px;
+}
+
+/*nav footer*/
+.nav{
+    padding-top: 60px;
+}
+
+.nav a{
+    color: white;
+}
+
+.nav a:hover{
+    color: #999;
+}
+
+.nav_footer{
+    margin-top: 85px;
+}
+
+.styletile_h1{
+    margin-top: 0;
+}
+
+.disclaimer{
+    color: white; d 
+}
+
+.mail{
+    color: white;
 }
